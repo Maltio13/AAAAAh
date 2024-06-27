@@ -1,0 +1,11 @@
+<script>
+            function openModal(image) {
+                document.getElementById('myModal').style.display = 'flex';
+                document.getElementById('modalImg').src = image;
+            }
+
+            function closeModal() {
+                document.getElementById('myModal').style.display = 'none';
+            }
+
+</script>

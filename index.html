@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Créez une galerie d'images avec des vignettes cliquables qui affichent l'image en
+grand format.">
+<meta name="author" content="Adrien">
+<meta name="copyright" content="Adrien">
+<meta name="robots" content="index, follow">
+
+<link rel="shortcut icon" href="images/Fleur Fond.jpg" type="image/x-icon">
+
+<link rel="stylesheet" href="css/Style.css">
+
+<title>Exercice 18 - Créer une galerie d'images<iframe>.</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Galerie d'images sur les fleurs</h1>
+    </header>
+
+    <main>
+
+        <div class="gallery">
+            <img src="images/Fleur 1.jpg" onclick="openModal('images/Fleur 1.jpg')" alt="image1">
+            <img src="images/Fleur 2.jpg" onclick="openModal('images/Fleur 2.jpg')" alt="image2">
+            <img src="images/Fleur 3.jpg" onclick="openModal('images/Fleur 3.jpg')" alt="image3">
+            <img src="images/Fleur 4.jpg" onclick="openModal('images/Fleur 4.jpg')" alt="image4">
+            <img src="images/Fleur 5.jpg" onclick="openModal('images/Fleur 5.jpg')" alt="image5">
+            <img src="images/Fleur 6.jpg" onclick="openModal('images/Fleur 6.jpg')" alt="image6">
+            <img src="images/Fleur 7.jpg" onclick="openModal('images/Fleur 7.jpg')" alt="image7">
+            <img src="images/Fleur 8.jpg" onclick="openModal('images/Fleur 8.jpg')" alt="image8">
+            <img src="images/Fleur 9.jpg" onclick="openModal('images/Fleur 9.jpg')" alt="image9">
+            <img src="images/Fleur 10.jpg" onclick="openModal('images/Fleur 10.jpg')" alt="image10">
+            <img src="images/Fleur 11.jpg" onclick="openModal('images/Fleur 11.jpg')" alt="image11">
+            <img src="images/Fleur 12.jpg" onclick="openModal('images/Fleur 12.jpg')" alt="image12">
+            <!-- Ajouter d'autres images ici. -->
+        </div>
+
+        <div id="myModal" class="modal">
+
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImg">
+
+        </div>
+        
+        <script>
+            function openModal(image) {
+                document.getElementById('myModal').style.display = 'flex';
+                document.getElementById('modalImg').src = image;
+            }
+
+            function closeModal() {
+                document.getElementById('myModal').style.display = 'none';
+            }
+
+        </script>
+    </main>
+
+    <footer>
+        <p>@ Ma page avec une galerie d'images en html5, css3 et JavaScript</p>
+    </footer>
+    
+</body>
+
+</html>
